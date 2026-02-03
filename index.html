@@ -5,22 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Louis Galvin | Portfolio</title>
   <meta name="description" content="Accounting student, Collegiate athlete, Future CPA" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Louis Galvin | Portfolio" />
+  <meta property="og:description" content="Accounting student, Collegiate athlete, Future CPA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/louisgalvinheadshot.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Louis Galvin | Portfolio" />
+  <meta name="twitter:description" content="Accounting student, Collegiate athlete, Future CPA" />
+  <meta name="twitter:image" content="assets/images/louisgalvinheadshot.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Place your CV at assets/cv.pdf to enable the Download CV button -->
+  <!-- CV: assets/Louis Galvin Resume 2026 Updated.pdf -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" sizes="any" />
 </head>
 <body>
+  <a href="#home" class="skip-link">Skip to main content</a>
   <header class="nav-wrap">
     <nav class="nav-inner">
       <a href="#home" class="nav-brand">Louis Galvin</a>
       <div class="nav-links">
         <a href="#home">Home</a>
-        <a href="#home">About</a>
+        <a href="#about">About</a>
         <a href="#resume">Resume</a>
+        <a href="#goals">Goals</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -31,7 +43,7 @@
       <div class="hero-grid">
         <div class="hero-left">
           <div class="hero-pill">
-            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             Kinsale, Ireland / Tampa, FL
           </div>
           <div class="hero-headline">
@@ -41,12 +53,12 @@
           <h2 class="hero-role">Accounting student, Collegiate athlete, Future CPA</h2>
           <p class="hero-tagline">Combining financial acumen with the competitive mindset of elite sports.</p>
           <div class="hero-buttons">
-            <a href="assets/cv.pdf" class="btn btn-primary" download="Louis-Galvin-CV.pdf">
-              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <a href="assets/Louis%20Galvin%20Resume%202026%20Updated.pdf" class="btn btn-primary" download="Louis-Galvin-Resume-2026.pdf">
+              <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
               Download CV
             </a>
             <a href="#contact" class="btn btn-outline">
-              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               Contact Me
             </a>
           </div>
@@ -55,7 +67,7 @@
           <div class="hero-image-wrap">
             <div class="hero-placeholder-wrap">
               <div class="hero-placeholder">
-                <img src="assets/images/louisgalvinheadshot.jpg" alt="Louis Galvin" class="hero-placeholder-img">
+                <img src="assets/images/louisgalvinheadshot.jpg" alt="Louis Galvin" class="hero-placeholder-img" fetchpriority="high" sizes="(max-width: 768px) 100vw, 24rem">
               </div>
               <div class="hero-placeholder-overlay"></div>
             </div>
@@ -65,90 +77,70 @@
       </div>
     </section>
 
-    <section class="stats">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-icon stat-icon--duotone">
-            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle class="stat-icon-bg" cx="12" cy="12" r="10" fill="currentColor" fill-opacity="0.2"/><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+
+    <section id="about" class="pillars">
+      <h2 class="pillars-main-title">About Me</h2>
+      <p class="pillars-subtitle">Balance, Discipline, Growth</p>
+      <div class="about-intro">
+        <p>As a college golfer and accounting student, I've learned that success in both arenas requires the same foundation: discipline, consistency, and a relentless commitment to improvement.</p>
+        <p>Every early morning on the course and late night studying teaches me something new. I believe in the power of incremental progress—whether it's shaving strokes off my handicap or mastering complex financial concepts. The journey matters as much as the destination.</p>
+        <p>My goal is simple: to become the best version of myself, both on the green and in the boardroom.</p>
+      </div>
+      <h3 class="pillars-section-heading">Three Pillars of Focus</h3>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="stat-icon-bg" d="M18 2H6v7a6 6 0 0 0 12 0V2Z" fill="currentColor" fill-opacity="0.2"/><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
           </div>
-          <div class="stat-content">
-            <span class="stat-value">73.7</span>
-            <span class="stat-label">Scoring Avg</span>
-            <div class="stat-bar"><span class="stat-bar-fill stat-bar-fill--92"></span></div>
-          </div>
+          <h3 class="pillar-title">Golf</h3>
+          <p class="pillar-desc">Competing at the collegiate level, constantly refining my swing, mental game, and course strategy. Every round is an opportunity to learn and improve.</p>
         </div>
-        <div class="stat-card">
-          <div class="stat-icon stat-icon--duotone">
-            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon class="stat-icon-bg" points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" fill="currentColor" fill-opacity="0.2"/><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect class="stat-icon-bg" x="2" y="7" width="20" height="15" rx="1" fill="currentColor" fill-opacity="0.2"/><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
           </div>
-          <div class="stat-content">
-            <span class="stat-value">121 mph</span>
-            <span class="stat-label">Driver Speed</span>
-            <div class="stat-bar"><span class="stat-bar-fill stat-bar-fill--97"></span></div>
-          </div>
+          <h3 class="pillar-title">Accounting</h3>
+          <p class="pillar-desc">Building a strong foundation in business and finance. From financial statements to tax strategy, I'm preparing for a career that combines analytical thinking with real-world impact.</p>
         </div>
-        <div class="stat-card">
-          <div class="stat-icon stat-icon--duotone">
-            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="stat-icon-bg" d="M18 2H6v7a6 6 0 0 0 12 0V2Z" fill="currentColor" fill-opacity="0.2"/><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h4v11h-4zM13.5 6.5h4v11h-4zM6.5 12h11M9.5 9.5v5M14.5 9.5v5"/></svg>
           </div>
-          <div class="stat-content">
-            <span class="stat-value">2x</span>
-            <span class="stat-label">National Titles</span>
-            <div class="stat-bar"><span class="stat-bar-fill stat-bar-fill--full"></span></div>
-          </div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon stat-icon--duotone">
-            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect class="stat-icon-bg" x="2" y="7" width="20" height="15" rx="1" fill="currentColor" fill-opacity="0.2"/><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-          </div>
-          <div class="stat-content">
-            <span class="stat-value">68 (-4)</span>
-            <span class="stat-label">Low Round</span>
-            <div class="stat-bar"><span class="stat-bar-fill stat-bar-fill--85"></span></div>
-          </div>
+          <h3 class="pillar-title">Fitness</h3>
+          <p class="pillar-desc">Dedicated to physical and mental conditioning. Training, nutrition, and recovery are all part of the equation—performance on the course starts in the gym.</p>
         </div>
       </div>
     </section>
 
     <section id="resume" class="resume">
+      <h2 class="resume-main-title">Resume</h2>
+      <div class="resume-block resume-block--contact">
+        <h3 class="resume-subtitle">Professional Background</h3>
+        <div class="resume-contact-row">
+          <a href="mailto:louisgalvin2005@gmail.com">louisgalvin2005@gmail.com</a>
+          <a href="tel:+18134607305">(813) 460-7305</a>
+          <span>Tampa, FL</span>
+          <a href="https://www.linkedin.com/in/louis-galvin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
       <div class="resume-block">
         <div class="section-head">
           <div class="section-icon">
-            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
-          <h2 class="section-title">Experience</h2>
+          <h3 class="section-title">Education</h3>
         </div>
         <div class="timeline">
           <div class="timeline-item timeline-item--current">
             <div class="timeline-dot"></div>
             <div class="timeline-layout">
               <div class="timeline-card">
-                <p class="timeline-card-date">2024 – Present</p>
-                <h3 class="timeline-card-title">NCAA Athlete (Men's Golf)</h3>
-                <div class="timeline-card-org">University of Tampa</div>
-                <p class="timeline-card-desc">Competing at the NCAA Division II level while maintaining academic excellence in the Accounting program. Focusing on time management, performance analysis, and team strategy.</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-layout">
-              <div class="timeline-card">
-                <p class="timeline-card-date">2022 – 2023</p>
-                <h3 class="timeline-card-title">College Athlete & National Champion</h3>
-                <div class="timeline-card-org">Hutchinson Community College</div>
-                <p class="timeline-card-desc">Member of the 2-time NJCAA National Championship winning team. Secured a T-34 finish at the 2023 NJCAA National Championships and achieved multiple Top-10 finishes in Division I events. Honorable Mention All-KJCCC.</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-layout">
-              <div class="timeline-card">
-                <p class="timeline-card-date">2020 – 2022</p>
-                <h3 class="timeline-card-title">Munster U-17 Panelist</h3>
-                <div class="timeline-card-org">Golf Ireland</div>
-                <p class="timeline-card-desc">Selected for the provincial elite performance panel, representing Munster in inter-provincial championships.</p>
+                <p class="timeline-card-date">Expected May 2026</p>
+                <h3 class="timeline-card-title">Bachelor of Science in Accounting</h3>
+                <div class="timeline-card-org">University of Tampa, Tampa, FL</div>
+                <p class="timeline-card-desc">International Student Athlete • GPA: 3.54</p>
+                <p class="timeline-card-desc">Relevant Coursework: Financial Accounting, Business Law, Managerial Accounting, Financial Management, Intermediate Accounting, Marketing, Information Technology Management</p>
               </div>
             </div>
           </div>
@@ -158,19 +150,23 @@
       <div class="resume-block">
         <div class="section-head">
           <div class="section-icon">
-            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           </div>
-          <h2 class="section-title">Education</h2>
+          <h3 class="section-title">Experience</h3>
         </div>
         <div class="timeline">
           <div class="timeline-item timeline-item--current">
             <div class="timeline-dot"></div>
             <div class="timeline-layout">
               <div class="timeline-card">
-                <p class="timeline-card-date">Expected 2026</p>
-                <h3 class="timeline-card-title">University of Tampa</h3>
-                <div class="timeline-card-org">Bachelor of Science in Accounting</div>
-                <p class="timeline-card-desc">Member of the Vice President's Honors List. Relevant Coursework: Financial Accounting, Managerial Accounting, Business Analytics.</p>
+                <p class="timeline-card-date">January 2026 – Present</p>
+                <h3 class="timeline-card-title">Tax Intern</h3>
+                <div class="timeline-card-org">Rivero, Gordimer &amp; Company (RG &amp; Co) — Tampa, FL</div>
+                <ul class="timeline-card-list">
+                  <li>Created federal and state returns for individuals and business entities throughout the 2026 tax season.</li>
+                  <li>Reviewed client financial data and tax documents to ensure accuracy and compliance with current IRS regulations.</li>
+                  <li>Collaborated with senior tax professionals to streamline reporting and meet critical filing deadlines.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -178,10 +174,14 @@
             <div class="timeline-dot"></div>
             <div class="timeline-layout">
               <div class="timeline-card">
-                <p class="timeline-card-date">2022 – 2023</p>
-                <h3 class="timeline-card-title">Hutchinson Community College</h3>
-                <div class="timeline-card-org">Associate of Arts</div>
-                <p class="timeline-card-desc">Graduated with honors while maintaining a rigorous travel and training schedule.</p>
+                <p class="timeline-card-date">May – August (2022–2025)</p>
+                <h3 class="timeline-card-title">Full-time Caddy</h3>
+                <div class="timeline-card-org">Old Head Golf Links — Ireland</div>
+                <ul class="timeline-card-list">
+                  <li>Provided professional and personalized caddy services for high-profile clients at one of the world's most premier golf courses.</li>
+                  <li>Developed strong customer service, communication, and golf strategy skills while supporting players on the course.</li>
+                  <li>Demonstrated adaptability and attention to detail in a fast-paced, luxury environment.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -189,13 +189,98 @@
             <div class="timeline-dot"></div>
             <div class="timeline-layout">
               <div class="timeline-card">
-                <p class="timeline-card-date">Graduated 2021</p>
-                <h3 class="timeline-card-title">Carrigaline Community School</h3>
-                <div class="timeline-card-org">Leaving Certificate</div>
-                <p class="timeline-card-desc">High academic achievement alongside competitive junior golf career at Kinsale Golf Club.</p>
+                <p class="timeline-card-date">November – December (2019, 2020)</p>
+                <h3 class="timeline-card-title">Warehouse Employee</h3>
+                <div class="timeline-card-org">Heritage Hampers Ireland — Ireland</div>
+                <ul class="timeline-card-list">
+                  <li>Created and filled thousands of customized, made-to-order gift baskets for a widely known European company.</li>
+                  <li>Developed strong efficiency skills to maximize product output without sacrificing precision.</li>
+                  <li>Learned how to properly communicate and collaborate with a large, diversified employee base.</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="resume-block">
+        <div class="section-head">
+          <div class="section-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="section-title">Involvement</h3>
+        </div>
+        <ul class="resume-simple-list">
+          <li><strong>Team Member, UT Men's Golf Team</strong> — January 2024 – Present</li>
+          <li><strong>Team Member, Hutchinson Community College Men's Golf Team</strong> — August 2022 – December 2023</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <div class="section-head">
+          <div class="section-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="section-title">Skills &amp; Certifications</h3>
+        </div>
+        <p class="resume-list-label">Computer:</p>
+        <p class="timeline-card-desc">Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, Teams), Tableau</p>
+        <p class="resume-list-label">Certifications:</p>
+        <p class="timeline-card-desc">Cengage Microsoft Excel Introductory Badge, HubSpot Social Media Marketing Certification</p>
+      </div>
+
+      <div class="resume-block">
+        <div class="section-head">
+          <div class="section-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3 class="section-title">Awards &amp; Recognition</h3>
+        </div>
+        <ul class="resume-simple-list">
+          <li>UT International Transfer Merit Scholarship</li>
+          <li>UT Men's Golf Scholarship</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <div class="section-head">
+          <div class="section-icon">
+            <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="section-title">Projects &amp; Collaborations</h3>
+        </div>
+        <div class="timeline-card">
+          <h3 class="timeline-card-title">Deloitte's Digital Transformation in Auditing</h3>
+          <ul class="timeline-card-list">
+            <li>Conducted in-depth research on Deloitte's innovative use of AI and RPA to revolutionize auditing practices.</li>
+            <li>Analyzed the impact of advanced technology on improving audit efficiency, accuracy, and decision-making processes.</li>
+            <li>Delivered a comprehensive presentation highlighting key insights on the integration of automation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals" class="goals">
+      <h2 class="goals-main-title">Looking Ahead</h2>
+      <p class="goals-subtitle">Goals &amp; Ambitions</p>
+      <div class="goals-grid">
+        <div class="goals-card">
+          <h3 class="goals-card-title">Short-Term</h3>
+          <ul class="goals-list">
+            <li>Be successful in my internship at RG &amp; Co</li>
+            <li>Lower my handicap by 2 strokes this season</li>
+            <li>Maintain a 3.5+ GPA while competing</li>
+            <li>Qualify for conference championship</li>
+          </ul>
+        </div>
+        <div class="goals-card">
+          <h3 class="goals-card-title">Long-Term</h3>
+          <ul class="goals-list">
+            <li>Earn CPA certification</li>
+            <li>Compete in amateur golf tournaments post-graduation</li>
+            <li>Build a career in corporate finance or investment banking</li>
+            <li>Continue personal development through fitness and discipline</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -203,7 +288,7 @@
     <section id="skills" class="skills">
       <div class="section-head">
         <div class="section-icon">
-          <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <svg aria-hidden="true" class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
         <h2 class="section-title">Skills & Expertise</h2>
       </div>
@@ -234,8 +319,8 @@
         <h2 class="contact-title">Let's Connect</h2>
         <p class="contact-text">Open to accounting roles and golf industry connections.</p>
         <div class="contact-buttons">
-          <a href="mailto:louis.galvin@spartans.ut.edu" class="btn btn-email">
-            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <a href="mailto:louisgalvin2005@gmail.com" class="btn btn-email">
+            <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             Email Me
           </a>
           <a href="https://www.linkedin.com/in/louis-galvin" target="_blank" rel="noopener noreferrer" class="contact-link contact-link--icon" aria-label="LinkedIn">
@@ -257,6 +342,19 @@
     </div>
   </footer>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Louis Galvin",
+    "jobTitle": "Accounting Student, Collegiate Athlete, Future CPA",
+    "email": "louisgalvin2005@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/louis-galvin",
+      "https://instagram.com/Louis.g4lvin1"
+    ]
+  }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
